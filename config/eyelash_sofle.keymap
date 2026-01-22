@@ -102,11 +102,11 @@
 
         symbol_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8   &kp F9   &kp F10         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &kp F11  &kp F12  &kp UNDER       &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans   &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans   &trans   &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &kp F6         &kp F7      &kp F8                &kp F9                 &kp F10       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp AMPERSAND  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE      &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans         &trans      &trans                &trans                 &trans
             >;
 
             display-name = "Symbols";
