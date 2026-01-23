@@ -145,43 +145,43 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - <
+  - '>'
+  - {t: '''', s: '"'}
+  - '"'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&'
-  - $
+  - '%'
+  - ^
   - '{'
   - '}'
-  - '%'
+  - $
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - {t: '-', s: _}
+  - +
+  - {t: '=', s: +}
+  - '&'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '|'
-  - ':'
+  - '*'
+  - '#'
   - (
   - )
-  - '?'
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '~'
-  - ^
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
+  - {t: /, s: '?'}
+  - _
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '|'
   - '@'
+  - {t: ., s: '>'}
+  - {t: ',', s: <}
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
