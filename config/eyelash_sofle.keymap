@@ -102,11 +102,11 @@
 
         symbol_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &kp F6         &kp F7      &kp F8                &kp F9                 &kp F10       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp AMPERSAND  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PIPE       &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE      &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans         &trans      &trans                &trans                 &trans
+&trans  &trans           &trans            &trans             &trans            &trans               &mmv MOVE_UP     &kp F6        &kp F7       &kp F8                &kp F9                 &kp F10        &trans
+&trans  &kp GRAVE        &kp LESS_THAN     &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &mmv MOVE_DOWN   &kp PERCENT   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp BACKSLASH
+&trans  &kp EXCLAMATION  &kp MINUS         &kp PLUS           &kp EQUAL         &kp AMPERSAND        &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT
+&trans  &kp TILDE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH         &kp UNDERSCORE       &mmv MOVE_RIGHT  &kp PIPE      &kp AT_SIGN  &kp DOT               &kp COMMA              &kp QUESTION   &trans
+&trans  &trans           &trans            &trans             &trans            &trans               &mkp LCLK        &trans        &trans       &trans                &trans                 &trans
             >;
 
             display-name = "# Sym";
