@@ -1,59 +1,36 @@
 # Sofle v2 low-profile Wireless Mechanical Keyboard
 
 ## Documentation
+
 - [ZMK Firmware](https://zmk.dev/docs)
+
+## Keymap Configuration
+
+- [ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/) - An easy-to-use GUI for configuring your keymap online.
 
 ## Building and Flashing
 
-All changes pushed to the repository trigger a build in GitHub Actions. You can download the latest firmware artifacts from the [Actions tab](https://github.com/carlosedp/zmk-sofle/actions/workflows/build.yml).
+All changes pushed to the repository trigger a build in GitHub Actions. To download the latest firmware:
 
-Download the generated `.zip` file and extract the three `.bin` files. One is the settings reset firmware that can be used to reset the keyboard settings if needed (same for both sides). The other two files are the left and right keyboard firmwares.
+1. Go to the [Actions tab](https://github.com/UgRoss/zmk-sofle/actions/workflows/build.yml) and select the **"Build ZMK firmware"** workflow.
+2. Select the most recent successful run.
+3. Scroll down to the **Artifacts** section at the bottom of the page.
+4. Click on the `firmware` file to download the zip.
 
-Press switch inside the circular hole on the back of the keyboard to reset.
+Extract the downloaded `.zip` file. You will find:
 
-Double clicking it will enter the Bootloader state. A drive will be shown in your computer where you can copy the corresponding `.bin` or `.uf2` file to flash the keyboard. Do this for both sides.
+- A settings reset firmware (to reset keyboard settings if needed).
+- The left and right keyboard firmwares in `.bin` or `.uf2` format.
 
-The toggle switches on the top and bottom of the left and right keyboards are both turned to the outer side, which is the battery switch.
+### Flashing Instructions
 
-If changing just the keymap or settings, flashing only one side (usually the left) is sufficient.
+- **Reset**: Press the switch inside the circular hole on the back of the keyboard once to reset.
+- **Bootloader Mode (Flashing)**: Double-click the reset switch to enter **Bootloader** state. A new drive will appear on your computer.
 
-## Building Locally
+1. Once in Bootloader mode, copy the corresponding `.bin` or `.uf2` file to the drive to flash the keyboard. Repeat for both sides.
+2. Ensure the toggle switches on both sides are turned to the outer side (battery switch).
 
-```sh
-git clone https://github.com/carlosedp/zmk-sofle.git
-cd zmk-sofle
-
-podman run -it --rm --security-opt label=disable --workdir /zmk -v $(pwd):/zmk -v /tmp:/temp docker.io/zmkfirmware/zmk-build-arm:4.1-branch /bin/bash
-
-west init -l config
-west update
-
-export "CMAKE_PREFIX_PATH=/zmk/zephyr:$CMAKE_PREFIX_PATH"
-
-# Build left half
-west build -d ./build/left -p \
-  -b "eyelash_sofle_left" \
-  -s /zmk/zmk/app \
-  -S studio-rpc-usb-uart \
-  -- -DSHIELD="nice_view_gem" -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n \
-  -DZMK_CONFIG="/zmk/config"
-
-# Build right half
-west build -d ./build/right -p \
-  -b "eyelash_sofle_right" \
-  -s /zmk/zmk/app \
-  -- -DSHIELD="nice_view_gem" \
-  -DZMK_CONFIG="/zmk/config"
-
-# Settings Reset
-west build -d ./build/settings_reset -p \
-  -b "nice_nano_v2" \
-  -s /zmk/zmk/app \
-  -- -DSHIELD="settings_reset" \
-  -DZMK_CONFIG="/zmk/config"
-```
-
-To flash the firmware, follow the same procedure as described in the "Building and Flashing" section above, using the generated `.uf2` files.
+If you are only changing the keymap or settings, flashing only the left side is usually sufficient.
 
 ## Update List
 
@@ -67,8 +44,7 @@ To flash the firmware, follow the same procedure as described in the "Building a
   2. This month, I also updated the ultra-thin versions of the corne and sofle cases. The frame and base plate have been thickened, and the opening of the reset switch has been adjusted, so that the reset switch can be easily pressed. At present, we are still conceptualizing how to design the shell with an inclined bracket.If you have carefully examined a PCB, you will notice that there are reserved interfaces for expansion IO. I wonder if anyone has been able to utilize them,I will try it！
   3. The GIF animations on the right-hand keyboard screen have been removed, which will significantly reduce the power consumption of the right-hand keyboard.
 
-> If your  sofle was updated before 2025/8/22, please update to the latest firmware.
->
+> If your sofle was updated before 2025/8/22, please update to the latest firmware.
 
 ## Contact Me
 
