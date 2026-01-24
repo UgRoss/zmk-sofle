@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: gpeye
+      url-base: https://github.com/GPeye
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -18,6 +20,9 @@ manifest:
       revision: main
     - name: nice-view-gem # Nice View Gem visualizer
       url: https://github.com/M165437/nice-view-gem
+      revision: main
+    - name: hammerbeam-slideshow
+      remote: gpeye
       revision: main
   self:
     path: boards
