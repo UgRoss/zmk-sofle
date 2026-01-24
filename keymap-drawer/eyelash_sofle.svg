@@ -644,15 +644,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M493,271 l-160,11" class="combo"/>
-<path d="M493,271 l160,-11" class="combo"/>
-<rect rx="6" ry="6" x="479" y="258" width="28" height="26" class="combo"/>
-<a href="#Config">
-<text x="493" y="271" class="combo tap layer-activator">
-<tspan x="493" dy="-0.6em">⚡</tspan><tspan x="493" dy="1.2em">Config</tspan>
-</text>
-</a></g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-→ Nav">
@@ -1000,15 +991,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M493,271 l-160,11" class="combo"/>
-<path d="M493,271 l160,-11" class="combo"/>
-<rect rx="6" ry="6" x="479" y="258" width="28" height="26" class="combo"/>
-<a href="#Config">
-<text x="493" y="271" class="combo tap layer-activator">
-<tspan x="493" dy="-0.6em">⚡</tspan><tspan x="493" dy="1.2em">Config</tspan>
-</text>
-</a></g>
 </g>
 </g>
 <g transform="translate(40, 776)" class="layer-# Sym">
@@ -1210,8 +1192,7 @@ rect.held, rect.combo.held {
 <g transform="translate(840, 168)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">;</text>
-<text x="0" y="-24" class="key shifted">:</text>
+<text x="0" y="-4" class="key tap">:</text>
 </g>
 <g transform="translate(896, 168)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1354,15 +1335,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M493,271 l-160,11" class="combo"/>
-<path d="M493,271 l160,-11" class="combo"/>
-<rect rx="6" ry="6" x="479" y="258" width="28" height="26" class="combo"/>
-<a href="#Config">
-<text x="493" y="271" class="combo tap layer-activator">
-<tspan x="493" dy="-0.6em">⚡</tspan><tspan x="493" dy="1.2em">Config</tspan>
-</text>
-</a></g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-layer3">
@@ -1693,15 +1665,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M493,271 l-160,11" class="combo"/>
-<path d="M493,271 l160,-11" class="combo"/>
-<rect rx="6" ry="6" x="479" y="258" width="28" height="26" class="combo"/>
-<a href="#Config">
-<text x="493" y="271" class="combo tap layer-activator">
-<tspan x="493" dy="-0.6em">⚡</tspan><tspan x="493" dy="1.2em">Config</tspan>
-</text>
-</a></g>
 </g>
 </g>
 <g transform="translate(40, 1553)" class="layer-⚡ Config">
@@ -2057,15 +2020,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="148" width="28" height="26" class="combo"/>
 <text x="103" y="161" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M493,271 l-160,11" class="combo"/>
-<path d="M493,271 l160,-11" class="combo"/>
-<rect rx="6" ry="6" x="479" y="258" width="28" height="26" class="combo"/>
-<a href="#Config">
-<text x="493" y="271" class="combo tap layer-activator">
-<tspan x="493" dy="-0.6em">⚡</tspan><tspan x="493" dy="1.2em">Config</tspan>
-</text>
-</a></g>
 </g>
 </g>
 </svg>
