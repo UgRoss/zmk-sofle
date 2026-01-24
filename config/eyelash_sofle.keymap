@@ -47,11 +47,6 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
-
-        combo_config_layer {
-            bindings = <&mo 4>;
-            key-positions = <56 61>;
-        };
     };
 
     macros {
@@ -102,10 +97,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp F1           &kp F2            &kp F3             &kp F4            &kp F5               &mmv MOVE_UP     &kp F6        &kp F7       &kp F8                &kp F9                 &kp F10        &trans
-&trans  &kp GRAVE        &kp LESS_THAN     &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &mmv MOVE_DOWN   &kp PERCENT   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp BACKSLASH
-&trans  &kp EXCLAMATION  &kp MINUS         &kp PLUS           &kp EQUAL         &kp AMPERSAND        &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT
-&trans  &kp TILDE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH         &kp UNDERSCORE       &mmv MOVE_RIGHT  &kp PIPE      &kp AT_SIGN  &kp DOT               &kp COMMA              &kp QUESTION   &trans
+&trans  &kp F1           &kp F2            &kp F3             &kp F4            &kp F5               &mmv MOVE_UP     &kp F6        &kp F7       &kp F8                &kp F9                 &kp F10       &trans
+&trans  &kp GRAVE        &kp LESS_THAN     &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &mmv MOVE_DOWN   &kp PERCENT   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR    &kp BACKSLASH
+&trans  &kp EXCLAMATION  &kp MINUS         &kp PLUS           &kp EQUAL         &kp AMPERSAND        &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp SQT
+&trans  &kp TILDE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH         &kp UNDERSCORE       &mmv MOVE_RIGHT  &kp PIPE      &kp AT_SIGN  &kp DOT               &kp COMMA              &kp QUESTION  &trans
 &trans  &trans           &trans            &trans             &trans            &trans               &mkp LCLK        &trans        &trans       &trans                &trans                 &trans
             >;
 
@@ -137,6 +132,15 @@
 
             display-name = "⚡ Config";
             sensor-bindings = <&scroll_encoder>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        config_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };
