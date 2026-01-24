@@ -65,20 +65,6 @@
             label = "SHIFT_MCLK";
         };
 
-        sel_line_left: sel_line_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LGUI) &kp LEFT_SHIFT &kp LEFT>;
-            label = "SEL_LINE_LEFT";
-        };
-
-        sel_line_right: sel_line_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LGUI) &kp LEFT_SHIFT &kp RIGHT>;
-            label = "SEL_LINE_RIGHT";
-        };
-
         mv_word_left: mv_word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
