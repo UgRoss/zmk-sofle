@@ -82,14 +82,14 @@
         mv_word_left: mv_word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ALT) &kp LEFT_ARROW>;
+            bindings = <&kp LA(LEFT)>;
             label = "MV_WORD_LEFT";
         };
 
         mv_word_right: mv_word_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ALT) &kp RIGHT_ARROW>;
+            bindings = <&kp LA(RIGHT)>;
             label = "MV_WORD_RIGHT";
         };
     };
