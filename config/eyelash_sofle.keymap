@@ -136,20 +136,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            display-name = "layer3";
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        config_layer_4 {
+        config_layer {
             bindings = <
 &kp C_SLEEP  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_BRI  &trans                          &trans  &trans  &trans     &trans  &trans
 &trans       &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(0,0,100)  &trans  &trans  &soft_off  &trans  &trans
@@ -168,7 +155,7 @@
 
         config_layer {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 };
