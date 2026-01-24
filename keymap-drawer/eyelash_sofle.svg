@@ -295,8 +295,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-⌘ Base">
-<text x="0" y="28" class="label" id="Base">⌘ Base:</text>
+<g transform="translate(40, 0)" class="layer-Base">
+<text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -599,9 +599,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Nav">
-<text x="0" y="-4" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">→</tspan><tspan x="0" dy="1.2em">Nav</tspan>
-</text>
+<text x="0" y="-4" class="key tap layer-activator">Nav</text>
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -629,9 +627,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Sym">
-<text x="0" y="-4" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">#</tspan><tspan x="0" dy="1.2em">Sym</tspan>
-</text>
+<text x="0" y="-4" class="key tap layer-activator">Sym</text>
 </a></g>
 <g transform="translate(728, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -650,8 +646,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-→ Nav">
-<text x="0" y="28" class="label" id="Nav">→ Nav:</text>
+<g transform="translate(40, 388)" class="layer-Nav">
+<text x="0" y="28" class="label" id="Nav">Nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -905,7 +901,7 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;sel_line…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;mv_word_…</tspan></text>
 </g>
 <g transform="translate(728, 196)" class="key trans keypos-48">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -915,7 +911,7 @@ rect.held, rect.combo.held {
 <g transform="translate(784, 203)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;sel_line…</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;mv_word_…</tspan></text>
 </g>
 <g transform="translate(840, 224)" class="key trans keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -993,8 +989,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-# Sym">
-<text x="0" y="28" class="label" id="Sym"># Sym:</text>
+<g transform="translate(40, 776)" class="layer-Sym">
+<text x="0" y="28" class="label" id="Sym">Sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1667,8 +1663,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1553)" class="layer-⚡ Config">
-<text x="0" y="28" class="label" id="Config">⚡ Config:</text>
+<g transform="translate(40, 1553)" class="layer-Config">
+<text x="0" y="28" class="label" id="Config">Config:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
