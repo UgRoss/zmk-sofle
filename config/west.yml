@@ -2,13 +2,22 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+      # Additional modules containing boards/shields/custom code can be listed here as well.
+      # See:
+      # - https://zmk.dev/docs/features/modules
+      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+  #  - name: gpeye
+  #    url-base: https://github.com/GPeye
   projects:
-    - name: eyelash_sofle
-      url: https://github.com/a741725193/zmk-sofle
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: eyelash_sofle
+      url: https://github.com/carlosedp/zmk-sofle
+      revision: main
+    - name: nice-view-gem # Nice View Gem visualizer
+      url: https://github.com/M165437/nice-view-gem
+      revision: main
   self:
     path: boards
