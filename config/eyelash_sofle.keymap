@@ -47,6 +47,11 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        config_layer {
+            bindings = <&mo 3>;
+            key-positions = <55 61>;
+        };
     };
 
     macros {
@@ -98,11 +103,11 @@
 
         navigation_layer {
             bindings = <
-&trans      &trans  &trans     &trans     &trans     &trans      &mmv MOVE_UP     &trans     &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_NEXT      &trans            &trans
-&trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp END         &kp UP            &kp HOME        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans     &trans     &trans     &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT        &kp DOWN          &kp RIGHT       &trans            &trans
-&trans      &trans  &trans     &trans     &trans     &trans      &mmv MOVE_RIGHT  &trans     &mv_word_left   &trans            &mv_word_right  &trans            &trans
-&kp C_MUTE  &trans  &trans     &trans     &trans     &trans      &mkp LCLK        &trans     &trans          &trans            &trans          &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans     &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_NEXT      &trans            &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP  &kp END         &kp UP            &kp HOME        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT        &kp DOWN          &kp RIGHT       &trans            &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans     &mv_word_left   &trans            &mv_word_right  &trans            &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans     &trans          &trans            &trans          &trans
             >;
 
             display-name = "Nav";
@@ -136,12 +141,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        config_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
