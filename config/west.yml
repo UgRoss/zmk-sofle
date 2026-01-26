@@ -14,7 +14,7 @@ manifest:
       revision: v0.3.0
       import: app/west.yml
     - name: eyelash_sofle
-      url: https://github.com/carlosedp/zmk-sofle
+      url: https://github.com/a741725193/zmk-sofle
       revision: main
     - name: nice-view-gem # Nice View Gem visualizer
       url: https://github.com/M165437/nice-view-gem
