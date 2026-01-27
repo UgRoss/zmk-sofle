@@ -251,8 +251,8 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
@@ -263,5 +263,5 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
-- p: [55, 61]
+- p: [61, 56]
   k: Config
