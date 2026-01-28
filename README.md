@@ -1,5 +1,7 @@
 # Sofle v2 low-profile Wireless Mechanical Keyboard
 
+![Sofle v2 low-profile wireless mechanical keyboard on desk](./keyboard-photo.jpeg)
+
 ## Documentation
 
 - [ZMK Firmware](https://zmk.dev/docs)
