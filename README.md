@@ -1,6 +1,6 @@
 # Sofle v2 low-profile Wireless Mechanical Keyboard
 
-![My Keyboard](./keyboard-photo.jpeg)
+![Sofle v2 low-profile wireless mechanical keyboard on desk](./keyboard-photo.jpeg)
 
 ## Documentation
 
