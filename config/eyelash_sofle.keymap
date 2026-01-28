@@ -104,7 +104,7 @@
         navigation_layer {
             bindings = <
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans     &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_NEXT      &trans            &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP  &kp END         &kp UP            &kp HOME        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME        &kp UP            &kp END         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT        &kp DOWN          &kp RIGHT       &trans            &trans
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans     &mv_word_left   &trans            &mv_word_right  &trans            &trans
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans     &trans          &trans            &trans          &trans
