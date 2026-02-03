@@ -47,11 +47,6 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
-
-        config_layer {
-            bindings = <&mo 3>;
-            key-positions = <61 56>;
-        };
     };
 
     macros {
@@ -141,5 +136,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        config-layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
