@@ -92,7 +92,7 @@
 &kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp RIGHT_GUI  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "Base";
         };
 
@@ -106,15 +106,15 @@
             >;
 
             display-name = "Nav";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         symbol_layer {
             bindings = <
 &trans  &kp F1           &kp F2            &kp F3             &kp F4            &kp F5               &mmv MOVE_UP     &kp F6        &kp F7       &kp F8                &kp F9                 &kp F10       &trans
-&trans  &kp GRAVE        &kp LESS_THAN     &kp GREATER_THAN   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &mmv MOVE_DOWN   &kp PERCENT   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR    &kp BACKSLASH
+&trans  &kp GRAVE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &mmv MOVE_DOWN   &kp PERCENT   &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR    &kp BACKSLASH
 &trans  &kp EXCLAMATION  &kp MINUS         &kp PLUS           &kp EQUAL         &kp AMPERSAND        &mmv MOVE_LEFT   &kp ASTERISK  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON     &kp SQT
-&trans  &kp TILDE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH         &kp UNDERSCORE       &mmv MOVE_RIGHT  &kp PIPE      &kp AT_SIGN  &kp DOT               &kp COMMA              &kp QUESTION  &trans
+&trans  &kp TILDE        &kp LESS_THAN     &kp GREATER_THAN   &kp SLASH         &kp UNDERSCORE       &mmv MOVE_RIGHT  &kp PIPE      &kp AT_SIGN  &kp COMMA             &kp COMMA              &kp QUESTION  &trans
 &trans  &trans           &trans            &trans             &trans            &trans               &mkp LCLK        &trans        &trans       &trans                &trans                 &trans
             >;
 
@@ -132,7 +132,6 @@
             >;
 
             display-name = "Config";
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 
